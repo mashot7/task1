@@ -1,0 +1,53 @@
+<style media="screen">
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 16px Tahoma, sans-serif;
+  }
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  textarea {
+      width: 400px;
+      height: 100px;
+      margin-bottom: 20px;
+  }
+  button {
+    padding: 10px;
+    width: 150px;
+  }
+  nav ul {
+    margin-bottom: 10px;
+  }
+  nav ul li{
+    height: 30px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  .feed-li {
+    margin-bottom: 20px;
+    display: block;
+  }
+  nav ul li:last-of-type {
+  }
+  a {
+    text-decoration: none;
+    color: #999;
+  }
+  a:hover {
+    color: #ccc;
+  }
+
+  table, td, th {
+    border: 1px solid #ccc;
+    margin: 0;
+    border-spacing: 0px;
+  }
