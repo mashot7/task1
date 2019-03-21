@@ -15,7 +15,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
 require_once('./include/connect.php');
 
 include_once 'include/header.php';
- ?>
+?>
 
   <nav>
     <ul>

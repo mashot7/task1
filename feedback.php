@@ -1,18 +1,18 @@
 <?php  include_once 'include/header.php'; ?>
 <script>
-  $(function () {
-      // feedback
-      $('form').submit(function () {
-          var firstname = $('input[name=firstname]').val();
-          var lastname = $('input[name=lastname]').val();
-          var email = $('input[name=email]').val();
-          var message = $('textarea[name=message]').val();
-          if (firstname == '' || lastname == '' || email == '' || message.trim() == '') {
-              alert('Fill in required fields - *');
-              return false;
-          }
-      });
-  });
+    $(function () {
+    // feedback
+    $('form').submit(function () {
+        var firstname = $('input[name=firstname]').val();
+        var lastname = $('input[name=lastname]').val();
+        var email = $('input[name=email]').val();
+        var message = $('textarea[name=message]').val();
+        if (firstname == '' || lastname == '' || email == '' || message.trim() == '') {
+            alert('Fill in required fields - *');
+            return false;
+        }
+    });
+    });
 </script>
     <form action="handle.php?cmd=feedback" method="post">
         <p><input type="text" name="firstname" placeholder="First Name"></p>

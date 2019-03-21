@@ -23,24 +23,24 @@ if (isset($_POST['password'])&& isset($_POST['username'])) {
 include_once 'include/header.php';
 ?>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>
-      $(function () {
-          // feedback
-          $('form').submit(function () {
-              var username = $('input[name=username]').val();
-              var password = $('input[name=password]').val();
-              if (username == '' || password == '') {
-                  alert('Fill in required fields - *');
-                  return false;
-              }
-          });
-      });
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$(function () {
+    // feedback
+    $('form').submit(function () {
+        var username = $('input[name=username]').val();
+        var password = $('input[name=password]').val();
+        if (username == '' || password == '') {
+            alert('Fill in required fields - *');
+            return false;
+        }
+    });
+});
+</script>
     <form action="login.php" method="post">
-      <p></p><input type="text" name="username" placeholder="Username" value="">
-      <p></p><input type="password" name="password" placeholder="Password" value="">
-      <p></p><button type="submit">Login</button>
+        <p></p><input type="text" name="username" placeholder="Username" value="">
+        <p></p><input type="password" name="password" placeholder="Password" value="">
+        <p></p><button type="submit">Login</button>
         <ul>
             <li><a href="index.php">Go back</a></li>
         </ul>
